@@ -102,6 +102,11 @@ main.jsx
 - Um ícone de cadeado é usado como favicon.
 - O favicon está localizado na pasta `public` e é referenciado no arquivo `index.html`.
 
+
+## Deploy
+
+A aplicação está implantada no GitHub Pages e pode ser acessada [aqui.](https://o-farias.github.io/Password-Generator/)
+
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
