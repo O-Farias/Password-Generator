@@ -13,7 +13,7 @@ function App() {
   const [copied, setCopied] = useState(false);
   const [passwordStrength, setPasswordStrength] = useState("");
   const [history, setHistory] = useState([]);
-  const [particleCount, setParticleCount] = useState(0); // Novo estado para contar partículas
+  const [particleCount, setParticleCount] = useState(0);
 
   useEffect(() => {
     const savedHistory =
@@ -160,14 +160,16 @@ function App() {
     detectRetina: true,
   };
 
-  function handleParticleClick() {
-    setParticleCount(particleCount + 5); // Aumenta o número de partículas a cada clique
+  function handleBackgroundClick(event) {
+    if (event.target === event.currentTarget) {
+      setParticleCount(particleCount + 5);
+    }
   }
 
   return (
     <div
       className="relative flex items-center justify-center min-h-screen text-gray-100"
-      onClick={handleParticleClick}
+      onClick={handleBackgroundClick}
     >
       <Particles
         id="tsparticles"
